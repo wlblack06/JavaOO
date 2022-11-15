@@ -8,21 +8,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-	- uses: actions/checkout@v3
-	- uses: actions/setup-java@v3
-	  with:
-	    distribution: 'zulu' # See 'Supported distributions' for available options
-	    java-version: '17'
-	- echo "Compiling the code..."
-	- mkdir bin
-	- cd src
-	    # The next step actually does the compile of all .java files in the org/gh directory
-    	- javac -d ../bin -classpath ../bin ./org/gh/*.java
-    
-    	- echo "Compile complete.  Now running code.  See output below"
-    	- cd ../bin
-
-	    # This next step runs the RunMe class
-    	- java -classpath . org.gh.RunMe
-
-    	- echo "Execution complete.  See output above"
+        - uses: actions/checkout@v3
+        - uses: actions/setup-java@v3
+          with:
+            distribution: 'zulu' # See 'Supported distributions' for available options
+            java-version: '17'
+        - echo "Compiling the code..."
+        - mkdir bin
+        - cd src
+        - javac -d ../bin -classpath ../bin ./org/gh/*.java
+        - echo "Compile complete.  Now running code.  See output below"
+        - cd ../bin
+        - java -classpath . org.gh.RunMe
+        - echo "Execution complete.  See output above"

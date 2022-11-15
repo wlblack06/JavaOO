@@ -13,11 +13,8 @@ jobs:
           with:
             distribution: 'zulu' # See 'Supported distributions' for available options
             java-version: '17'
-        - echo "Compiling the code..."
         - mkdir bin
         - cd src
         - javac -d ../bin -classpath ../bin ./org/gh/*.java
-        - echo "Compile complete.  Now running code.  See output below"
         - cd ../bin
         - java -classpath . org.gh.RunMe
-        - echo "Execution complete.  See output above"

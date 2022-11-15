@@ -13,8 +13,4 @@ jobs:
           with:
             distribution: 'zulu' # See 'Supported distributions' for available options
             java-version: '17'
-        - run: mkdir bin
-        - run: cd src
-        - run: javac -d ../bin -classpath ../bin ./org/gh/*.java
-        - run: cd ../bin
-        - run: java -classpath . org.gh.RunMe
+        - run: buildMe.sh

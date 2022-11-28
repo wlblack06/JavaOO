@@ -13,4 +13,5 @@ jobs:
           with:
             distribution: 'zulu' # See 'Supported distributions' for available options
             java-version: '17'
+        - run: chmod +x ./buildMe.sh
         - run: ./buildMe.sh

@@ -1,48 +1,35 @@
 package org.gh;
 
-// extends Parent means we inherit from Parent
-// This gives Student the ability to use Parent methods and attributes
+// extends Student means we inherit from Student
+// This gives Senior the ability to use Student methods and attributes
 // implements Printable means we must override the methods in that interface
-public class Senior extends Person implements Printable{
+public class Senior extends Student implements Printable{
 
-    // attribute to store students grade 
+    // attribute to store a seniors gpa 
     // NOTE: it's private, so we provide a getter and setter
-    private String grade;
+    private String gpa;
     
     // set grade
-    public void setGrade(String grade){
-        this.grade = grade;
+    public void setgpa(String gpa){
+        this.gpa = gpa;
     }
-    // get grade
-    public String getGrade(){
-        return this.grade;
+    // get gpa
+    public String getgpa(){
+        return this.gpa;
     }
     
     // constructor called to create a new student object
     //  See it's usage in RunMe
-    public Student(String name, String grade){
+    public Senior(String name, String gpa){
         super(name);
-        this.setGrade(grade);
+        this.setgpa(gpa);
     }
 
     // Because this class implements Printable, I must override the printMe() method
     public String printMe(){
         // For a student, I want the name and grade to print
-        return "Student details from PrintMe() - " + this.getName()+ " - "+this.getGrade();
+        return "Senior details from PrintMe() - " + this.getName()+ " - "+this.getgpa();
     }
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
 

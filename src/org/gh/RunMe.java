@@ -9,14 +9,16 @@ public class RunMe{
         // Create a new student, set a name and a grade
         // NOTE: since Student inherits from Person we also get person methods
         // see getName() and toString() below which are defined in Person
-        System.out.println("Creating a new student and Teacher");
+        System.out.println("Creating a new student, Teacher, and Ash Ketchum");
         Student objStudent = new Student("Student 1", "GradeA");
         Teacher objTeacher = new Teacher("Teacher 1", "Class#1, Class#2");
+        PokemonTrainer objPokemonTrainer = new PokemonTrainer("Ash Ketchum", "0");
 
 
         // Print details of a student we created above (name - grade)
         System.out.println("Print with name (from person) and grade (from student)");
         System.out.println(objStudent.getName() + " - " + objStudent.getGrade());
+        System.out.println(objPokemonTrainer.getName() + " - " + objPokemonTrainer.getpokemonCaught());
 
 
         // Print details of a Teacher we created above (name - classes)

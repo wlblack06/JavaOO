@@ -11,16 +11,13 @@ public class PokemonTrainer extends Person implements Printable{
         return this.pokemonCaught;
     }
     
-    // constructor called to create a new student object
-    //  See it's usage in RunMe
-    public PokemonTrainer(String name, String PokemonTrainer){
+    public PokemonTrainer(String name, String pokemonCaught){
         super(name);
         this.setPokemonCaught(pokemonCaught);
     }
 
     // Because this class implements Printable, I must override the printMe() method
     public String printMe(){
-        // For a student, I want the name and grade to print
-        return "Pokemon Trainer details from PrintMe() - " + this.getName()+ " - "+this.getpokemonCaught();
+        return "Pokemon Caught - " + this.getName()+ " - "+this.getpokemonCaught();
     }
 }

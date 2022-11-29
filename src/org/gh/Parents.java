@@ -7,5 +7,5 @@ public class Parent extends Person implements Printable{
     
     super(name);
     
-    this. 
+    this.setStudent(student)
 

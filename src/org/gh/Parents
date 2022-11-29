@@ -1,0 +1,3 @@
+package org.gh;
+
+public class Parent extends Person implements Printable{

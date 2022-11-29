@@ -1,6 +1,6 @@
 package org.gh;
 
-public class PokemonTrainer extends Person implements Printable{
+public class dumb extends Person implements Printable{
 
     private String pokemonCaught;
     

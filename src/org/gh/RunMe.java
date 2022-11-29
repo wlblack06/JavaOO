@@ -11,7 +11,7 @@ public class RunMe{
         // see getName() and toString() below which are defined in Person
         System.out.println("Creating a new student and Teacher");
         Student objStudent = new Student("Student 1", "GradeA");
-        Senior objSenior = new Senior("Senior 1", "gpa#1");
+        Senior objSenior = new Senior("Senior 1", "gpa");
         Teacher objTeacher = new Teacher("Teacher 1", "Class#1, Class#2");
 
 

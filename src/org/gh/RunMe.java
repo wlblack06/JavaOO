@@ -12,7 +12,7 @@ public class RunMe{
         System.out.println("Creating a new student, Teacher, and Ash Ketchum");
         Student objStudent = new Student("Student 1", "GradeA");
         Teacher objTeacher = new Teacher("Teacher 1", "Class#1, Class#2");
-        PokemonTrainer objPokemonTrainer = new PokemonTrainer("Ash Ketchum", "0");
+        dumb objPokemonTrainer = new PokemonTrainer("Ash Ketchum", "0");
 
 
         // Print details of a student we created above (name - grade)

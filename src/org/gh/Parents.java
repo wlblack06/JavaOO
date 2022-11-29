@@ -1,11 +1,25 @@
 package org.gh;
 
 public class Parent extends Person implements Printable{
-  private String student;
+  private String child;
   
-  public Parent(String name, String student){
+  public Parent(String name, String child){
     
     super(name);
     
-    this.setStudent(student)
+    this.setChild(child); 
+  }
+      
+  public String getChild(){
+    return this.child;
+  }
+  
+  public void setChild(String child){
+    this.child = child; 
+  }
+  
+  public String printmMe(){
+    return "Parent info from printMe() = " + this.getName()+ " - "+ get.thisChild();
+  }
+}
 

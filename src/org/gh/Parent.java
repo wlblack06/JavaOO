@@ -2,9 +2,7 @@ package org.gh;
 
 public class Parent extends Person implements Printable{
   private String child;
-  
   public Parent(String name, String child){
-    
     super(name);
     
     this.setChild(child); 

@@ -9,7 +9,7 @@ public class RunMe{
         // Create a new student, set a name and a grade
         // NOTE: since Student inherits from Person we also get person methods
         // see getName() and toString() below which are defined in Person
-        System.out.println("Creating a new student and Teacher");
+        System.out.println("Creating a new student, Teacher, and Parent");
         Student objStudent = new Student("Student 1", "GradeA");
         Teacher objTeacher = new Teacher("Teacher 1", "Class#1, Class#2");
         Parent objParent = new Parent("Parent 1", "Child#1");

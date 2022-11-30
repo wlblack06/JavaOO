@@ -12,7 +12,8 @@ public class RunMe{
         System.out.println("Creating a new student and Teacher");
         Student objStudent = new Student("Student 1", "GradeA");
         Teacher objTeacher = new Teacher("Teacher 1", "Class#1, Class#2");
-        Mclass objMclass = new Mclass();
+        Mclass objMclass = new Mclass("Mr.A");
+        System.out.println(objMclass);
 
 
         // Print details of a student we created above (name - grade)

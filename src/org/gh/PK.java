@@ -17,8 +17,11 @@ public class PK extends Person implements Printable{
         this.setPokemonCaught(pokemonCaught);
     }
 
-    // Because this class implements Printable, I must override the printMe() method
     public String printMe(){
         return "Pokemon Caught - " + this.getName()+ ", "+this.getpokemonCaught();
+    }
+    
+    public String toString(){
+        return this.getName();
     }
 }
